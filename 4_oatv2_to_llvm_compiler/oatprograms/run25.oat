@@ -1,0 +1,12 @@
+int program (int argc, string[] argv) {
+  var a = new int[3]{i -> 110};
+  var str = string_of_array (a);
+  print_string (str);
+  
+  /*
+  var b = a[0];
+  var c = a[1];
+  var d = a[2];
+  */
+  return 0;
+}

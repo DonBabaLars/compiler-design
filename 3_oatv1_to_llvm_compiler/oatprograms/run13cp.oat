@@ -1,0 +1,11 @@
+int f(int a1, int a2) {
+  var z = 0;
+  z = a1 + a2;
+  return ;
+}
+
+int program (int argc, string[] argv) {
+  var x = 5;
+  f(x,5);
+  return 0;
+}

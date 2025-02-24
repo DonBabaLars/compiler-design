@@ -1,0 +1,22 @@
+
+struct Coordinate {
+  int c
+}
+
+struct Point {
+  Coordinate x;
+  Coordinate y
+}
+
+
+int program(int argc, string[] argv) {
+  var a = new Coordinate {c = 88};
+  var b = new Coordinate {c = 99};
+  var p = new Point {x = a; y = b};
+
+  p.x = new Coordinate {c = 77};
+  /* var p = new Point {x = 3; y = 4 };
+  p.x = 5;
+  */
+  return p.x.c;
+}

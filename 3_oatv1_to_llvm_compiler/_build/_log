@@ -1,0 +1,560 @@
+### Starting build.
+# Target: main.ml.depends, tags: { extension:ml, file:main.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules main.ml > main.ml.depends
+# Target: util/assert.mli.depends, tags: { extension:mli, file:util/assert.mli, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules util/assert.mli > util/assert.mli.depends
+# Target: driver.ml.depends, tags: { extension:ml, file:driver.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules driver.ml > driver.ml.depends
+# Target: astlib.ml.depends, tags: { extension:ml, file:astlib.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules astlib.ml > astlib.ml.depends
+# Target: ast.ml.depends, tags: { extension:ml, file:ast.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules ast.ml > ast.ml.depends
+# Target: util/range.mli.depends, tags: { extension:mli, file:util/range.mli, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules util/range.mli > util/range.mli.depends
+# Target: util/range.cmi, tags: { byte, compile, extension:mli, file:util/range.mli, interf, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o util/range.cmi util/range.mli
+# Target: ast.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ast.cmo, file:ast.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o ast.cmo ast.ml
+# Target: backend.ml.depends, tags: { extension:ml, file:backend.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules backend.ml > backend.ml.depends
+# Target: ll/ll.ml.depends, tags: { extension:ml, file:ll/ll.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules ll/ll.ml > ll/ll.ml.depends
+# Target: util/platform.ml.depends, tags: { extension:ml, file:util/platform.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules util/platform.ml > util/platform.ml.depends
+# Target: x86/x86.ml.depends, tags: { extension:ml, file:x86/x86.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules x86/x86.ml > x86/x86.ml.depends
+# Target: ll/ll.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ll/ll.cmo, file:ll/ll.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/ll.cmo ll/ll.ml
+# Target: util/platform.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:util/platform.cmo, file:util/platform.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o util/platform.cmo util/platform.ml
+# Target: x86/x86.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:x86/x86.cmo, file:x86/x86.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I x86 -I util -I ll -o x86/x86.cmo x86/x86.ml
+# Target: frontend.ml.depends, tags: { extension:ml, file:frontend.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules frontend.ml > frontend.ml.depends
+# Target: ll/llutil.ml.depends, tags: { extension:ml, file:ll/llutil.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules ll/llutil.ml > ll/llutil.ml.depends
+# Target: ll/llutil.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ll/llutil.cmo, file:ll/llutil.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/llutil.cmo ll/llutil.ml
+# Target: lexer.mll, tags: { extension:mll, file:lexer.mll, lexer, ocaml, ocamllex, quiet }
+/home/student/.opam/4.13.1/bin/ocamllex.opt -q lexer.mll
+# Target: lexer.ml.depends, tags: { extension:ml, file:lexer.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules lexer.ml > lexer.ml.depends
+# Target: parser.mly.depends, tags: { extension:mly, file:parser.mly, infer, menhir_ocamldep, ocaml, ocamldep, quiet }
+menhir --raw-depend --ocamldep '/home/student/.opam/4.13.1/bin/ocamldep.opt -modules' parser.mly > parser.mly.depends
++ menhir --raw-depend --ocamldep '/home/student/.opam/4.13.1/bin/ocamldep.opt -modules' parser.mly > parser.mly.depends
+File "parser.mly", line 118, characters 0-5:
+Warning: symbol fdecl is unreachable from any of the start symbol(s).
+# Target: parser.mly, tags: { byte, compile, extension:ml, extension:mly, file:parser.ml, file:parser.mly, infer, menhir, ocaml, parser, quiet }
+menhir --ocamlc '/home/student/.opam/4.13.1/bin/ocamlc.opt -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86' --explain --infer parser.mly
++ menhir --ocamlc '/home/student/.opam/4.13.1/bin/ocamlc.opt -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86' --explain --infer parser.mly
+File "parser.mly", line 118, characters 0-5:
+Warning: symbol fdecl is unreachable from any of the start symbol(s).
+# Target: parser.mli.depends, tags: { extension:mli, file:parser.mli, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules parser.mli > parser.mli.depends
+# Target: parser.cmi, tags: { byte, compile, extension:mli, file:parser.mli, interf, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o parser.cmi parser.mli
+# Target: ll/llinterp.ml.depends, tags: { extension:ml, file:ll/llinterp.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules ll/llinterp.ml > ll/llinterp.ml.depends
+# Target: ll/lllexer.mll, tags: { extension:mll, file:ll/lllexer.mll, lexer, ocaml, ocamllex, quiet }
+/home/student/.opam/4.13.1/bin/ocamllex.opt -q ll/lllexer.mll
+# Target: ll/lllexer.ml.depends, tags: { extension:ml, file:ll/lllexer.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules ll/lllexer.ml > ll/lllexer.ml.depends
+# Target: ll/llparser.mly.depends, tags: { extension:mly, file:ll/llparser.mly, infer, menhir_ocamldep, ocaml, ocamldep, quiet }
+menhir --raw-depend --ocamldep '/home/student/.opam/4.13.1/bin/ocamldep.opt -modules' ll/llparser.mly > ll/llparser.mly.depends
+# Target: ll/llparser.mly, tags: { byte, compile, extension:ml, extension:mly, file:ll/llparser.ml, file:ll/llparser.mly, infer, menhir, ocaml, parser, quiet }
+menhir --ocamlc '/home/student/.opam/4.13.1/bin/ocamlc.opt -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86' --explain --infer ll/llparser.mly
+# Target: ll/llparser.mli.depends, tags: { extension:mli, file:ll/llparser.mli, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules ll/llparser.mli > ll/llparser.mli.depends
+# Target: ll/llparser.cmi, tags: { byte, compile, extension:mli, file:ll/llparser.mli, interf, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/llparser.cmi ll/llparser.mli
+# Target: astlib.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:astlib.cmo, file:astlib.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o astlib.cmo astlib.ml
+# Target: backend.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:backend.cmo, file:backend.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o backend.cmo backend.ml
+# Target: frontend.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:frontend.cmo, file:frontend.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o frontend.cmo frontend.ml
++ /home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o frontend.cmo frontend.ml
+File "frontend.ml", lines 131-132, characters 41-54:
+131 | .........................................function
+132 |   |Struct ts -> ("Struct {"^(tylist_to_string ts)^"}")
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Ptr _|Array (_, _)|Fun (_, _)|Namedt _)
+File "frontend.ml", lines 375-379, characters 2-15:
+375 | ..let Array (l, arrty) = arr in
+376 |   (* print_endline "cracked arr -> l,arrty"; *)
+377 |   match arrty with
+378 |     |Ptr (t) -> get_ty_from_structptr arrty
+379 |     |_ -> arrty
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Ptr _|Struct _|Fun (_, _)|Namedt _)
+File "frontend.ml", lines 373-379, characters 2-15:
+373 | ..let Struct (t1::arr::ts) = structty in
+374 |   (* print_endline "cracked struct -> type::arr::_"; *)
+375 |   let Array (l, arrty) = arr in
+376 |   (* print_endline "cracked arr -> l,arrty"; *)
+377 |   match arrty with
+378 |     |Ptr (t) -> get_ty_from_structptr arrty
+379 |     |_ -> arrty
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Struct (_::[])
+File "frontend.ml", lines 371-379, characters 2-15:
+371 | ..let Ptr (structty) = structptrty in
+372 |   (* print_endline "cracked ptr -> struct"; *)
+373 |   let Struct (t1::arr::ts) = structty in
+374 |   (* print_endline "cracked struct -> type::arr::_"; *)
+375 |   let Array (l, arrty) = arr in
+376 |   (* print_endline "cracked arr -> l,arrty"; *)
+377 |   match arrty with
+378 |     |Ptr (t) -> get_ty_from_structptr arrty
+379 |     |_ -> arrty
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Struct _|Array (_, _)|Fun (_, _)|Namedt _)
+File "frontend.ml", line 392, characters 7-8:
+392 |       |_ -> failwith "trying to get_ty_from_structptr_once on non ptr" in
+             ^
+Warning 11 [redundant-case]: this match case is unused.
+File "frontend.ml", lines 395-396, characters 4-11:
+395 | ....let Array (l, arrty) = arr in
+396 |     (arrty)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Ptr _|Struct _|Fun (_, _)|Namedt _)
+File "frontend.ml", lines 394-396, characters 4-11:
+394 | ....let Struct (t1::arr::ts) = structty in
+395 |     let Array (l, arrty) = arr in
+396 |     (arrty)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Struct (_::[])
+File "frontend.ml", lines 513-515, characters 12-166:
+513 | ............let (Id extractId) = ptr.elt in
+514 |             let (ty, extractId) = (Ctxt.lookup extractId c) in
+515 |             ((get_ty_from_structptr_once (Ptr structty)),[(Const 0L);(Const 1L);indop],Ptr structty,Ll.Id tempSym,[I (tempSym, Load (Ptr (Ptr structty), extractId))])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 517-519, characters 12-64:
+517 | ............let (Id extractId) = ptr.elt in
+518 |             let (ty, extractId) = (Ctxt.lookup extractId c) in
+519 |             (arrty,[(Const 0L);indop],Ptr structty,extractId,[])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 538-540, characters 8-162:
+538 | ........let (Id extractId) = ptr.elt in
+539 |         let (ty, extractId) = (Ctxt.lookup extractId c) in
+540 |         ((get_ty_from_structptr_once (Ptr structty)),[(Const 0L);(Const 1L);indop],Ptr structty,Ll.Id tempSym,[I (tempSym, Load (Ptr (Ptr structty), extractId))])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 542-544, characters 8-60:
+542 | ........let (Id extractId) = ptr.elt in
+543 |         let (ty, extractId) = (Ctxt.lookup extractId c) in
+544 |         (arrty,[(Const 0L);indop],Ptr structty,extractId,[])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 578-581, characters 4-29:
+578 | ....let Ptr (Fun (args, ret)) = ty in
+579 |     let lluid = gensym id in
+580 |     let str = str >@ [ I (lluid, Call (ret, gid, tyops))] in
+581 |     (ret , Ll.Id lluid , str)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Ptr (Void|I1|I8|I64|Ptr _|Struct _|Array (_, _)|Namedt _)
+File "frontend.ml", lines 575-581, characters 4-29:
+575 | ....let Id (id) = idid in (* shoudld be id of function*)
+576 |     let (newc, str, tyops) = cmp_fargs c expnds [] [] in
+577 |     let (ty, gid) = Ctxt.lookup_function id c in
+578 |     let Ptr (Fun (args, ret)) = ty in
+579 |     let lluid = gensym id in
+580 |     let str = str >@ [ I (lluid, Call (ret, gid, tyops))] in
+581 |     (ret , Ll.Id lluid , str)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 677-702, characters 2-39:
+677 | ..match exp with
+678 |   | CNull (ty) -> let (ty, op, str) = cmp_exp c expnd in 
+679 |     str >@ [T (Ll.Ret (rt, Some (op)))]
+680 |   | CBool true -> [T (Ll.Ret (rt, Some (Const 1L)))]
+681 |   | CBool false -> [T (Ll.Ret (rt, Some (Const 0L)))]
+...
+699 |     str >@  [T (Ll.Ret (rt, Some op)) ]
+700 | 
+701 |   | Uop (unop, {elt=ex1;}) -> let (ty, op, str) = cmp_exp c expnd in 
+702 |     str >@ [T (Ll.Ret (rt, Some (op)))]
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+NewArr (_, _)
+File "frontend.ml", lines 761-765, characters 0-7:
+761 | let Id (id) = idid in (* shoudld be id of function*)
+762 | let (newc, str, tyops) = cmp_fargs c expnds [] [] in
+763 | (* let lluid = gensym id in *)
+764 | let str = str >@ [I ( "", (Call (Ll.Void, Ll.Gid id, tyops)))] in
+765 | (c,str)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", line 338, characters 6-10:
+338 |   let size = Const 3L in
+            ^^^^
+Warning 26 [unused-var]: unused variable size.
+File "frontend.ml", line 432, characters 10-19:
+432 |       let castedStr = gensym "castedStr" in
+                ^^^^^^^^^
+Warning 26 [unused-var]: unused variable castedStr.
+File "frontend.ml", line 455, characters 10-21:
+455 |       let gepidLength = gensym "getpointerLength" in
+                ^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable gepidLength.
+File "frontend.ml", line 464, characters 15-18:
+464 |       let {elt=exp} = expnd in
+                     ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 558, characters 9-14:
+558 |     let (recty,recop,recstr) = cmp_carr_rec c llarrty op expnds in 
+               ^^^^^
+Warning 26 [unused-var]: unused variable recty.
+File "frontend.ml", line 558, characters 15-20:
+558 |     let (recty,recop,recstr) = cmp_carr_rec c llarrty op expnds in 
+                     ^^^^^
+Warning 26 [unused-var]: unused variable recop.
+File "frontend.ml", line 558, characters 21-27:
+558 |     let (recty,recop,recstr) = cmp_carr_rec c llarrty op expnds in 
+                           ^^^^^^
+Warning 26 [unused-var]: unused variable recstr.
+File "frontend.ml", line 569, characters 17-20:
+569 |         let {elt=exp} = expnd in
+                       ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 607, characters 14-17:
+607 |     let {elt= exp;} = expnd in
+                    ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 754, characters 15-18:
+754 |       let {elt=exp} = expnd in
+                     ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 877, characters 16-22:
+877 |             let length = List.length expnodelist in
+                      ^^^^^^
+Warning 26 [unused-var]: unused variable length.
+File "frontend.ml", line 924, characters 12-15:
+924 |         let gid = s in 
+                  ^^^
+Warning 26 [unused-var]: unused variable gid.
+# Target: lexer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:lexer.cmo, file:lexer.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o lexer.cmo lexer.ml
+# Target: ll/llinterp.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ll/llinterp.cmo, file:ll/llinterp.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/llinterp.cmo ll/llinterp.ml
+# Target: ll/lllexer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ll/lllexer.cmo, file:ll/lllexer.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/lllexer.cmo ll/lllexer.ml
+# Target: gradedtests.ml.depends, tags: { extension:ml, file:gradedtests.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules gradedtests.ml > gradedtests.ml.depends
+# Target: util/assert.cmi, tags: { byte, compile, extension:mli, file:util/assert.mli, interf, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o util/assert.cmi util/assert.mli
+# Target: driver.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:driver.cmo, file:driver.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o driver.cmo driver.ml
+# Target: progasts.ml.depends, tags: { extension:ml, file:progasts.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules progasts.ml > progasts.ml.depends
+# Target: progasts.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:progasts.cmo, file:progasts.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o progasts.cmo progasts.ml
+# Target: studenttests.ml.depends, tags: { extension:ml, file:studenttests.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules studenttests.ml > studenttests.ml.depends
+# Target: gradedtests.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:gradedtests.cmo, file:gradedtests.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o gradedtests.cmo gradedtests.ml
+# Target: studenttests.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:studenttests.cmo, file:studenttests.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o studenttests.cmo studenttests.ml
+# Target: main.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlc.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o main.cmo main.ml
+# Target: util/assert.ml.depends, tags: { extension:ml, file:util/assert.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules util/assert.ml > util/assert.ml.depends
+# Target: util/range.ml.depends, tags: { extension:ml, file:util/range.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules util/range.ml > util/range.ml.depends
+# Target: util/range.cmx, tags: { compile, extension:cmx, extension:ml, file:util/range.cmx, file:util/range.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o util/range.cmx util/range.ml
+# Target: ast.cmx, tags: { compile, extension:cmx, extension:ml, file:ast.cmx, file:ast.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o ast.cmx ast.ml
+# Target: ll/ll.cmx, tags: { compile, extension:cmx, extension:ml, file:ll/ll.cmx, file:ll/ll.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/ll.cmx ll/ll.ml
+# Target: util/platform.cmx, tags: { compile, extension:cmx, extension:ml, file:util/platform.cmx, file:util/platform.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o util/platform.cmx util/platform.ml
+# Target: x86/x86.cmx, tags: { compile, extension:cmx, extension:ml, file:x86/x86.cmx, file:x86/x86.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I x86 -I util -I ll -o x86/x86.cmx x86/x86.ml
+# Target: ll/llutil.cmx, tags: { compile, extension:cmx, extension:ml, file:ll/llutil.cmx, file:ll/llutil.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/llutil.cmx ll/llutil.ml
+# Target: parser.ml.depends, tags: { extension:ml, file:parser.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules parser.ml > parser.ml.depends
+# Target: parser.cmx, tags: { compile, extension:cmx, extension:ml, file:parser.cmx, file:parser.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o parser.cmx parser.ml
+# Target: ll/llparser.ml.depends, tags: { extension:ml, file:ll/llparser.ml, ocaml, ocamldep, quiet }
+/home/student/.opam/4.13.1/bin/ocamldep.opt -modules ll/llparser.ml > ll/llparser.ml.depends
+# Target: ll/llparser.cmx, tags: { compile, extension:cmx, extension:ml, file:ll/llparser.cmx, file:ll/llparser.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/llparser.cmx ll/llparser.ml
+# Target: astlib.cmx, tags: { compile, extension:cmx, extension:ml, file:astlib.cmx, file:astlib.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o astlib.cmx astlib.ml
+# Target: backend.cmx, tags: { compile, extension:cmx, extension:ml, file:backend.cmx, file:backend.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o backend.cmx backend.ml
+# Target: frontend.cmx, tags: { compile, extension:cmx, extension:ml, file:frontend.cmx, file:frontend.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o frontend.cmx frontend.ml
++ /home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o frontend.cmx frontend.ml
+File "frontend.ml", lines 131-132, characters 41-54:
+131 | .........................................function
+132 |   |Struct ts -> ("Struct {"^(tylist_to_string ts)^"}")
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Ptr _|Array (_, _)|Fun (_, _)|Namedt _)
+File "frontend.ml", lines 375-379, characters 2-15:
+375 | ..let Array (l, arrty) = arr in
+376 |   (* print_endline "cracked arr -> l,arrty"; *)
+377 |   match arrty with
+378 |     |Ptr (t) -> get_ty_from_structptr arrty
+379 |     |_ -> arrty
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Ptr _|Struct _|Fun (_, _)|Namedt _)
+File "frontend.ml", lines 373-379, characters 2-15:
+373 | ..let Struct (t1::arr::ts) = structty in
+374 |   (* print_endline "cracked struct -> type::arr::_"; *)
+375 |   let Array (l, arrty) = arr in
+376 |   (* print_endline "cracked arr -> l,arrty"; *)
+377 |   match arrty with
+378 |     |Ptr (t) -> get_ty_from_structptr arrty
+379 |     |_ -> arrty
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Struct (_::[])
+File "frontend.ml", lines 371-379, characters 2-15:
+371 | ..let Ptr (structty) = structptrty in
+372 |   (* print_endline "cracked ptr -> struct"; *)
+373 |   let Struct (t1::arr::ts) = structty in
+374 |   (* print_endline "cracked struct -> type::arr::_"; *)
+375 |   let Array (l, arrty) = arr in
+376 |   (* print_endline "cracked arr -> l,arrty"; *)
+377 |   match arrty with
+378 |     |Ptr (t) -> get_ty_from_structptr arrty
+379 |     |_ -> arrty
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Struct _|Array (_, _)|Fun (_, _)|Namedt _)
+File "frontend.ml", line 392, characters 7-8:
+392 |       |_ -> failwith "trying to get_ty_from_structptr_once on non ptr" in
+             ^
+Warning 11 [redundant-case]: this match case is unused.
+File "frontend.ml", lines 395-396, characters 4-11:
+395 | ....let Array (l, arrty) = arr in
+396 |     (arrty)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Void|I1|I8|I64|Ptr _|Struct _|Fun (_, _)|Namedt _)
+File "frontend.ml", lines 394-396, characters 4-11:
+394 | ....let Struct (t1::arr::ts) = structty in
+395 |     let Array (l, arrty) = arr in
+396 |     (arrty)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Struct (_::[])
+File "frontend.ml", lines 513-515, characters 12-166:
+513 | ............let (Id extractId) = ptr.elt in
+514 |             let (ty, extractId) = (Ctxt.lookup extractId c) in
+515 |             ((get_ty_from_structptr_once (Ptr structty)),[(Const 0L);(Const 1L);indop],Ptr structty,Ll.Id tempSym,[I (tempSym, Load (Ptr (Ptr structty), extractId))])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 517-519, characters 12-64:
+517 | ............let (Id extractId) = ptr.elt in
+518 |             let (ty, extractId) = (Ctxt.lookup extractId c) in
+519 |             (arrty,[(Const 0L);indop],Ptr structty,extractId,[])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 538-540, characters 8-162:
+538 | ........let (Id extractId) = ptr.elt in
+539 |         let (ty, extractId) = (Ctxt.lookup extractId c) in
+540 |         ((get_ty_from_structptr_once (Ptr structty)),[(Const 0L);(Const 1L);indop],Ptr structty,Ll.Id tempSym,[I (tempSym, Load (Ptr (Ptr structty), extractId))])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 542-544, characters 8-60:
+542 | ........let (Id extractId) = ptr.elt in
+543 |         let (ty, extractId) = (Ctxt.lookup extractId c) in
+544 |         (arrty,[(Const 0L);indop],Ptr structty,extractId,[])
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 578-581, characters 4-29:
+578 | ....let Ptr (Fun (args, ret)) = ty in
+579 |     let lluid = gensym id in
+580 |     let str = str >@ [ I (lluid, Call (ret, gid, tyops))] in
+581 |     (ret , Ll.Id lluid , str)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Ptr (Void|I1|I8|I64|Ptr _|Struct _|Array (_, _)|Namedt _)
+File "frontend.ml", lines 575-581, characters 4-29:
+575 | ....let Id (id) = idid in (* shoudld be id of function*)
+576 |     let (newc, str, tyops) = cmp_fargs c expnds [] [] in
+577 |     let (ty, gid) = Ctxt.lookup_function id c in
+578 |     let Ptr (Fun (args, ret)) = ty in
+579 |     let lluid = gensym id in
+580 |     let str = str >@ [ I (lluid, Call (ret, gid, tyops))] in
+581 |     (ret , Ll.Id lluid , str)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", lines 677-702, characters 2-39:
+677 | ..match exp with
+678 |   | CNull (ty) -> let (ty, op, str) = cmp_exp c expnd in 
+679 |     str >@ [T (Ll.Ret (rt, Some (op)))]
+680 |   | CBool true -> [T (Ll.Ret (rt, Some (Const 1L)))]
+681 |   | CBool false -> [T (Ll.Ret (rt, Some (Const 0L)))]
+...
+699 |     str >@  [T (Ll.Ret (rt, Some op)) ]
+700 | 
+701 |   | Uop (unop, {elt=ex1;}) -> let (ty, op, str) = cmp_exp c expnd in 
+702 |     str >@ [T (Ll.Ret (rt, Some (op)))]
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+NewArr (_, _)
+File "frontend.ml", lines 761-765, characters 0-7:
+761 | let Id (id) = idid in (* shoudld be id of function*)
+762 | let (newc, str, tyops) = cmp_fargs c expnds [] [] in
+763 | (* let lluid = gensym id in *)
+764 | let str = str >@ [I ( "", (Call (Ll.Void, Ll.Gid id, tyops)))] in
+765 | (c,str)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(CNull _|CBool _|CInt _|CStr _|CArr (_, _)|
+NewArr (_, {loc=(_, (_, _), (_, _)); _ })|
+Index ({loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Call ({loc=(_, (_, _), (_, _)); _ }, _)|
+Bop (_, {loc=(_, (_, _), (_, _)); _ }, {loc=(_, (_, _), (_, _)); _ })|
+Uop (_, {loc=(_, (_, _), (_, _)); _ }))
+File "frontend.ml", line 338, characters 6-10:
+338 |   let size = Const 3L in
+            ^^^^
+Warning 26 [unused-var]: unused variable size.
+File "frontend.ml", line 432, characters 10-19:
+432 |       let castedStr = gensym "castedStr" in
+                ^^^^^^^^^
+Warning 26 [unused-var]: unused variable castedStr.
+File "frontend.ml", line 455, characters 10-21:
+455 |       let gepidLength = gensym "getpointerLength" in
+                ^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable gepidLength.
+File "frontend.ml", line 464, characters 15-18:
+464 |       let {elt=exp} = expnd in
+                     ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 558, characters 9-14:
+558 |     let (recty,recop,recstr) = cmp_carr_rec c llarrty op expnds in 
+               ^^^^^
+Warning 26 [unused-var]: unused variable recty.
+File "frontend.ml", line 558, characters 15-20:
+558 |     let (recty,recop,recstr) = cmp_carr_rec c llarrty op expnds in 
+                     ^^^^^
+Warning 26 [unused-var]: unused variable recop.
+File "frontend.ml", line 558, characters 21-27:
+558 |     let (recty,recop,recstr) = cmp_carr_rec c llarrty op expnds in 
+                           ^^^^^^
+Warning 26 [unused-var]: unused variable recstr.
+File "frontend.ml", line 569, characters 17-20:
+569 |         let {elt=exp} = expnd in
+                       ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 607, characters 14-17:
+607 |     let {elt= exp;} = expnd in
+                    ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 754, characters 15-18:
+754 |       let {elt=exp} = expnd in
+                     ^^^
+Warning 26 [unused-var]: unused variable exp.
+File "frontend.ml", line 877, characters 16-22:
+877 |             let length = List.length expnodelist in
+                      ^^^^^^
+Warning 26 [unused-var]: unused variable length.
+File "frontend.ml", line 924, characters 12-15:
+924 |         let gid = s in 
+                  ^^^
+Warning 26 [unused-var]: unused variable gid.
+# Target: lexer.cmx, tags: { compile, extension:cmx, extension:ml, file:lexer.cmx, file:lexer.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o lexer.cmx lexer.ml
+# Target: ll/llinterp.cmx, tags: { compile, extension:cmx, extension:ml, file:ll/llinterp.cmx, file:ll/llinterp.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/llinterp.cmx ll/llinterp.ml
+# Target: ll/lllexer.cmx, tags: { compile, extension:cmx, extension:ml, file:ll/lllexer.cmx, file:ll/lllexer.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I ll -I util -I x86 -o ll/lllexer.cmx ll/lllexer.ml
+# Target: util/assert.cmx, tags: { compile, extension:cmx, extension:ml, file:util/assert.cmx, file:util/assert.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o util/assert.cmx util/assert.ml
+# Target: driver.cmx, tags: { compile, extension:cmx, extension:ml, file:driver.cmx, file:driver.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o driver.cmx driver.ml
+# Target: progasts.cmx, tags: { compile, extension:cmx, extension:ml, file:progasts.cmx, file:progasts.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o progasts.cmx progasts.ml
+# Target: gradedtests.cmx, tags: { compile, extension:cmx, extension:ml, file:gradedtests.cmx, file:gradedtests.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o gradedtests.cmx gradedtests.ml
+# Target: studenttests.cmx, tags: { compile, extension:cmx, extension:ml, file:studenttests.cmx, file:studenttests.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o studenttests.cmx studenttests.ml
+# Target: main.cmx, tags: { compile, extension:cmx, extension:ml, file:main.cmx, file:main.ml, implem, native, ocaml, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt -c -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml -I util -I ll -I x86 -o main.cmx main.ml
+# Target: main.native, tags: { dont_link_with, extension:native, file:main.native, link, native, ocaml, program, quiet }
+/home/student/.opam/4.13.1/bin/ocamlopt.opt unix.cmxa str.cmxa -I /home/student/.opam/4.13.1/lib/num -I /home/student/.opam/4.13.1/lib/ocaml /home/student/.opam/4.13.1/lib/ocaml/nums.cmxa -I util -I ll -I x86 util/range.cmx ast.cmx astlib.cmx ll/ll.cmx util/platform.cmx x86/x86.cmx backend.cmx ll/llutil.cmx frontend.cmx parser.cmx lexer.cmx ll/llinterp.cmx ll/llparser.cmx ll/lllexer.cmx driver.cmx progasts.cmx util/assert.cmx gradedtests.cmx studenttests.cmx main.cmx -o main.native
+# Compilation successful.
