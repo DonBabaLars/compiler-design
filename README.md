@@ -1,0 +1,1 @@
+Compiler design project for which we iteratively compiled OAT (a C-like language) to x86-Lite via LLVM. In the end we applied optimizations to our programs including dead code elimintation, constant propagation and register allocation
